@@ -1,0 +1,39 @@
+models:
+  Product:
+    name: string
+    description: string:nullable
+    price: decimal:8,2
+    category: string:nullable
+
+controllers:
+  Product:
+    index:
+      query: all
+      render: product.index with:products
+    show:
+      render: product.show with:product
+    create:
+      render: product.create
+    store:
+      validate: product
+      # validate: name, price
+      save: product
+      flash: product.name
+      redirect: product.index
+    edit:
+      render: product.edit with:product
+    update:
+      validate: product
+      update: product
+      flash: product.name
+      redirect: product.index
+    destroy:
+      delete: product
+      redirect: product.index
+
+    # blueprint shorthands
+    ######################
+    # resource: index, show, create, store
+    # resource: index, show, create, store, edit, update, destroy
+    # resource: web
+    # resource

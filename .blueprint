@@ -1,0 +1,17 @@
+created:
+    - database/migrations/2020_05_09_143628_create_products_table.php
+    - app/Product.php
+    - database/factories/ProductFactory.php
+    - app/Http/Controllers/ProductController.php
+    - app/Http/Requests/ProductStoreRequest.php
+    - app/Http/Requests/ProductUpdateRequest.php
+    - resources/views/product/index.blade.php
+    - resources/views/product/show.blade.php
+    - resources/views/product/create.blade.php
+    - resources/views/product/edit.blade.php
+    - tests/Feature/Http/Controllers/ProductControllerTest.php
+updated:
+    - routes/web.php
+models:
+    User: {  }
+    Product: { name: string, description: 'string:nullable', price: 'decimal:8,2', category: 'string:nullable' }
