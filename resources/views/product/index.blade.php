@@ -7,6 +7,8 @@
         <h3>{{ $product->name }}</h3>
         <p>{{ $product->description }}</p>
         <h4>{{ $product->price }}</h4>
-        @endforeach
+      @endforeach
     </div>
+
+    {{ $products->links() }}
 @endsection
