@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Product;
 
 class ProductSeeder extends Seeder
 {
@@ -16,10 +17,6 @@ class ProductSeeder extends Seeder
          'description' => 'A boat for one person',
          'category' => 'Watersports',
          'price' => 275],
-        ['name' => 'Lifejacket',
-         'description' => 'Protective and fashionable',
-         'category' => 'Watersports',
-         'price' => 48.95],
         ['name' => 'Soccer Ball',
          'description' => 'FIFA-approved size and weight',
          'category' => 'Soccer',
