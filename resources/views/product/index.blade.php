@@ -8,7 +8,7 @@
         <h4>
           {{ $product->name }}
           <span class="badge badge-pill badge-primary" style="float:right">
-            <small>{{ $product->price }}</small>
+            <small>${{ number_format($product->price, 2, '.', ',') }}</small>
           </span>
         </h4>
       </div>
